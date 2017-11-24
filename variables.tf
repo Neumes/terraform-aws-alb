@@ -61,6 +61,11 @@ variable "health_check_interval" {
   default     = 10
 }
 
+variable "health_check_matcher" {
+  description = "The status code to match against to confirm a healthy state."
+  default     = 200
+}
+
 variable "health_check_path" {
   description = "The URL the ELB should use for health checks. e.g. /health"
 }
