@@ -2,7 +2,7 @@
 
 provider "aws" {
   region  = "${var.region}"
-  version = "~> 1.0.0"
+  version = "~> 1.3"
 }
 
 resource "aws_alb" "main" {
