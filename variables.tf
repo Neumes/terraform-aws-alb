@@ -123,3 +123,8 @@ variable "tags" {
 variable "vpc_id" {
   description = "VPC id where the ALB and other resources will be deployed."
 }
+
+variable "deregistration_delay" {
+  description = "The amount time for Elastic Load Balancing to wait before changing the state of a deregistering target from draining to unused. The range is 0-3600 seconds. The default value is 300 seconds."
+  default = 300
+}
